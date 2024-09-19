@@ -1,0 +1,138 @@
+.btn{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: rgb(234, 41, 234);
+    font-weight: bold;
+    gap: 30px;
+}
+.image{
+    border-radius: 50%;
+    z-index: 20;
+
+}
+.backimage{
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left:10px;
+    z-index: 1;
+}
+.job{
+    color: violet;
+    text-transform: uppercase;
+}
+.quotes{
+    color: violet;
+    font-size: 30px;
+    
+}
+.leftright{
+    color: violet;
+}
+/* Card.css */
+.topcard{
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.image {
+    border-radius: 50%;
+    border: 3px solid #f0f0f0;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    /* color: violet; */
+}
+
+.job {
+    font-size: 1rem;
+    color: violet;
+    margin-bottom: 20px;
+
+}
+
+.quotes {
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.review {
+    font-size: 1rem;
+    /* text-align: center; */
+    color: rgb(62, 48, 48);
+    padding: 0 10px;
+    margin: 20px 0;
+    text-shadow: #ccc;
+    text-align: justify;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .job {
+        font-size: 0.9rem;
+    }
+
+    .review {
+        font-size: 0.9rem;
+    }
+
+    .quotes {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    .job {
+        font-size: 0.8rem;
+    }
+
+    .review {
+        font-size: 0.8rem;
+    }
+
+    .quotes {
+        font-size: 1.2rem;
+    }
+}
